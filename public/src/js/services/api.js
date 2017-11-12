@@ -4,6 +4,6 @@ angular.module('insight.api')
   .factory('Api',
     function() {
       return {
-        apiPrefix: '/insight-yng-api'
+        apiPrefix: '/insight-qct-api'
       }
     });
