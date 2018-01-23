@@ -123,8 +123,13 @@ margin-left: 0;
 .navbar-default .navbar-nav>li>a {
   color: #F4FBE8;
   font-family: 'Ubuntu', sans-serif;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.navbar-default .navbar-nav>li>a.scan {
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus {
@@ -757,8 +762,8 @@ a.v_highlight_more {
     font-size: 30px;
   }
   .navbar-default .navbar-nav>li>a {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 13px;
+    padding-right: 13px;
   }
 }
 
@@ -841,12 +846,22 @@ a.v_highlight_more {
   }
 }
 
+@media (min-width: 991px) and (max-width: 1199px) {
+  .status {
+    padding-left: 8px;
+    padding-right: 6px;
+  }
+  .status span.conn {
+    display: none;
+  }
+}
+
 @media (min-width: 1200px) {
   .col-gray-fixed {
     width: 280px;
   }
   .navbar-form .form-control {
-    width: 350px;
+    width: 330px;
   }
 }
 

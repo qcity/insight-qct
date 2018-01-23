@@ -10,12 +10,16 @@ var APP_CONFIG = {
 var lang = navigator.languages ?
     navigator.languages[0] :
     (navigator.language || navigator.userLanguage);
+
+lang = lang.replace(/-/g, '_');
+
 if (lang == 'ko_KR')
     lang = 'ko';
 else
     lang = 'en';
 
-var defaultLanguage = localStorage.getItem('insight-language' + APP_CONFIG.SYMBOL) || lang;
+var localStorageLang = localStorage.getItem('insight-language' + APP_CONFIG.SYMBOL);
+var defaultLanguage = localStorageLang === null ? lang : localStorageLang;
 var defaultCurrency = localStorage.getItem('insight-currency' + APP_CONFIG.SYMBOL) || APP_CONFIG.SYMBOL;
 
 angular.module('insight', [

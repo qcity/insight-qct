@@ -29,14 +29,14 @@
                             <span class="glyphicon glyphicon-ok" tooltip="Historic sync finished" tooltip-placement="bottom" data-ng-show="sync.status==='finished'"> </span>
                         </div>
                         &nbsp; &middot;
-                        <span data-ng-init="getStatus('Info')">
-          <strong>{{'Conn'|translate}}</strong> {{info.connections}}
-        </span> &middot;
+                        <span data-ng-init="getStatus('Info')" class="conn">
+          <strong>{{'Conn'|translate}}</strong> {{info.connections}} &middot;
+        </span>
                         <strong>{{'Height'|translate}}</strong> {{totalBlocks || info.blocks}}
                     </div>
                 </li>
                 <li>
-                    <a data-ng-click="openScannerModal()"><span class="glyphicon
+                    <a data-ng-click="openScannerModal()" class="scan"><span class="glyphicon
             glyphicon-qrcode"></span> Scan</a>
                 </li>
                 <li class="dropdown" data-ng-controller="CurrencyController" data-ng-include="'views/includes/currency.html'"></li>

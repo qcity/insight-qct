@@ -56,7 +56,8 @@ angular.module('insight.blocks').controller('BlocksController',
       var d=new Date($routeParams.startTimestamp*1000);
       var m=d.getMinutes();
       if (m<10) m = '0' + m;
-      $scope.before = ' before ' + d.getHours() + ':' + m;
+      $scope.before = true;
+      //' before ' + d.getHours() + ':' + m;
     }
 
     $rootScope.titleDetail = $scope.detail;
