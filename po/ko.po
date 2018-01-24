@@ -521,7 +521,7 @@ msgstr ""
 
 #: public/views/transaction/tx.html
 msgid "mined"
-msgstr "체굴일시"
+msgstr "채굴일시"
 
 #: public/views/block_list.html
 msgid "mined on:"
